@@ -10,4 +10,7 @@ public class WmsApplication {
 		SpringApplication.run(WmsApplication.class, args);
 	}
 
+    public void java(){
+        System.out.println("杂毛");
+    }
 }
