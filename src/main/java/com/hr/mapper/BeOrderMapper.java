@@ -36,5 +36,5 @@ public interface BeOrderMapper {
             "      #{projectmoney,jdbcType=DECIMAL}, #{realmoney,jdbcType=DECIMAL}, #{paydate,jdbcType=TIMESTAMP}, \n" +
             "      #{projectdate1,jdbcType=TIMESTAMP}, #{projectdate2,jdbcType=TIMESTAMP}, #{areaid,jdbcType=INTEGER}, \n" +
             "      #{abortcause,jdbcType=VARCHAR})")
-    public void addKh();
+    public void addKh(BeOrder beOrder);
 }

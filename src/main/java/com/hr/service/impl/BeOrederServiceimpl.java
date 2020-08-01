@@ -1,5 +1,6 @@
 package com.hr.service.impl;
 
+import com.hr.entity.BeOrder;
 import com.hr.mapper.BeOrderMapper;
 import com.hr.service.BeOrederService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ public class BeOrederServiceimpl implements BeOrederService{
     private BeOrderMapper beOrderMapper;
 
     @Override
-    public void addKh() {
-        beOrderMapper.addKh();
+    public void addKh(BeOrder beOrder) {
+        beOrderMapper.addKh(beOrder);
     }
 }

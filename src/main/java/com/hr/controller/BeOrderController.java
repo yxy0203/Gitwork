@@ -1,5 +1,6 @@
 package com.hr.controller;
 
+import com.hr.entity.BeOrder;
 import com.hr.service.BeOrederService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,9 +20,9 @@ public class BeOrderController {
     }
 
     @RequestMapping("addKh")
-    public String addKh(){
+    public String addKh(BeOrder beOrder){
 
-        beOrederService.addKh();
+        beOrederService.addKh(beOrder);
 
         return "page/be__request.html";
     }
