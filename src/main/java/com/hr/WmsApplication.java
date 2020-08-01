@@ -10,7 +10,7 @@ public class WmsApplication {
 		SpringApplication.run(WmsApplication.class, args);
 	}
 
-    public void java(){
-        System.out.println("杂毛");
-    }
+	public void test(){
+		System.out.println("有东西吗");
+	}
 }
